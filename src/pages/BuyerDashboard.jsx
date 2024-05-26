@@ -16,7 +16,7 @@ function BuyerDashboard() {
   const [noResults, setNoResults] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:5000/all-sites')
+    fetch('https://rentify-server-rf0d.onrender.com/all-sites')
       .then(res => res.json())
       .then(data => {
         setData(data);

@@ -28,7 +28,7 @@ function SellerDashboard() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:5000/sellerform', formData)
+    axios.post('https://rentify-server-rf0d.onrender.com/sellerform', formData)
       .then(res => alert("Crafted your site!"))
       .catch(err => console.log(err));
   };

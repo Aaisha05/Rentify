@@ -24,7 +24,7 @@ function Signup() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:5000/signup', values)
+    axios.post('https://rentify-server-rf0d.onrender.com/signup', values)
       .then(res => alert("Registered successfully"))
       .catch(err => console.log(err));
   }

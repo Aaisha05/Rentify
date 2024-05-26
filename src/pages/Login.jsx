@@ -19,7 +19,7 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post('http://localhost:5000/login', values)
+      .post('https://rentify-server-rf0d.onrender.com/login', values)
       .then((res) => {
         if (res.data.message === 'Login successful') {
           alert('Logged in successfully');
