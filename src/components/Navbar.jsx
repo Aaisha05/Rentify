@@ -79,10 +79,10 @@ function Navbar() {
           Contact
         </Link>
       </div>
-      <div className="hidden lg:flex items-center">
+      <div className="hidden z-80 lg:flex items-center relative">
         <FaUserCircle className="text-2xl cursor-pointer" onClick={toggleUserData} />
         {showUserData && userData && (
-          <div className="absolute top-12 right-0 text-center bg-white p-4 sm:p-10 px-8 sm:px-20 rounded shadow-md z-50">
+          <div className="absolute top-12 right-0 text-center bg-white p-4 sm:p-10 px-8 sm:px-20 rounded shadow-md z-80" style={{ zIndex: 1000 }}>
             <div className="flex justify-center mb-2">
               <FaUserCircle className="text-4xl" />
             </div>
@@ -112,3 +112,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

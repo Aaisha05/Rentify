@@ -57,7 +57,7 @@ function BuyerDashboard() {
     <div className='w-screen overflow-x-hidden'>
       <Navbar />
 
-      <div className="fixed top-16 left-0 w-full bg-white border-b py-6 z-50">
+      <div className="fixed top-16 left-0 w-full bg-white border-b py-6 z-10">
         <div className="container mx-auto flex justify-center">
           <form onSubmit={handleSubmit} className="w-1/3 flex items-center border bg-white rounded-full ">
             <input
