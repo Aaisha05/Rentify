@@ -24,7 +24,7 @@ function Navbar() {
 
       console.log('Fetching user data for email:', email);
 
-      const response = await axios.post('http://localhost:5000/userdetails', {
+      const response = await axios.post('https://rentify-server-rf0d.onrender.com/userdetails', {
         email: email
       }, {
         headers: {
