@@ -24,7 +24,7 @@ function Login() {
         if (res.data.message === 'Login successful') {
           alert('Logged in successfully');
           localStorage.setItem("user",values.email)
-          navigate('/dashboard'); 
+          navigate('/who_are_you'); 
         } else {
           alert('Invalid credentials');
         }
